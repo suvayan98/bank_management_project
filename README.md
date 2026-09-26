@@ -1,56 +1,67 @@
-# Bank Management System (Python CLI Project)
+# Bank Management System
+
+## Overview
 
 I built this as a beginner project while learning Python — a simple command-line app that mimics how a bank might handle basic customer accounts. Nothing fancy, no database, everything lives in memory while the program runs. The goal was to practice loops, lists, conditionals, and basic input handling in a project that actually felt like "something," instead of just another toy script.
 
-## What it does
+You run it, and it drops you into a menu that keeps looping until you choose to exit, letting you open accounts, update them, move money around, and check details — plus a manager-only view for oversight.
 
-You run it, and it drops you into a menu where you can:
+## Features
 
-- Open a new account (name, customer ID, branch, address, IFSC code, account type)
-- Update an existing account's name, address, or account type
-- Deposit money into an account
-- Withdraw money (it'll stop you if you try to take out more than the balance)
-- Check an account's balance
-- Pull up an account's full details
-- Log in as a "manager" (password protected) to see all accounts, or filter customers by balance — above ₹10,000 or below ₹500
+- **Account Opening** – Register a new customer with name, customer ID, branch, address, IFSC code, and account type.
+- **Account Updation** – Edit an existing account's name, address, or account type.
+- **Deposit** – Add money to an account's balance.
+- **Withdraw** – Take money out, with a check that stops you from withdrawing more than the balance.
+- **Account Balance** – Quickly view just the balance for an account.
+- **Account Details** – View all stored info for a specific account.
+- **Manager Folder** (password-protected) –
+  - View every account in the system
+  - List customers with balance ≥ ₹10,000
+  - List customers with balance ≤ ₹500
+- Basic input validation, so invalid account numbers or non-numeric menu choices don't crash the program.
 
-That's it. It keeps looping the menu until you choose to exit.
+## Technologies / Tools Used
 
-## Why I made it this way
+- **Python 3** — that's genuinely it. No pip installs, no frameworks. Just the standard library.
 
-I wanted something that touches on real logic instead of just print statements — validating account numbers, handling wrong menu choices without crashing, stopping overdrafts, etc. It's not production-grade (no real database, no encryption, no persistence between runs), but that's on purpose — the point was learning the mechanics, not shipping a real banking app.
+## Steps to Install & Run the Project
 
-## Built with
-
-- Python 3 — that's genuinely it. No pip installs, no frameworks. Just the standard library.
-
-## Getting it running
-
-1. Clone it:
+1. Clone the repository:
    ```bash
    git clone https://github.com/<your-username>/<your-repo-name>.git
    cd <your-repo-name>
    ```
-2. Check you've got Python 3 (`python --version` — if not, grab it from python.org).
-3. Run it:
+2. Check you've got Python 3 installed:
+   ```bash
+   python --version
+   ```
+   (Download from [python.org](https://www.python.org/downloads/) if you don't have it.)
+3. Run the program:
    ```bash
    python bank_management.py
    ```
 
-No setup beyond that. If Python's installed, it just runs.
+No extra setup needed — if Python's installed, it just runs.
 
-## How I tested it
+## Instructions for Testing
 
 I didn't write automated tests for this one (yet) — testing was manual, just poking at it through the menu:
 
-- Opened a few accounts and made sure account numbers incremented properly
-- Deposited and withdrew money, checked the math held up
-- Tried withdrawing more than the balance — confirmed it gets rejected instead of going negative
-- Updated name/address/account type and double-checked the change actually stuck
-- Tried the manager login with the wrong password (rejected) and the right one (`abc123`) to check all three manager options
-- Threw in some invalid account numbers and non-numeric menu choices to make sure it doesn't crash
+1. **Create an account** — option `1`, fill in the details, note the account number shown.
+2. **Deposit money** — option `3`, enter the account number and an amount, confirm the balance updates.
+3. **Withdraw money** — option `4`:
+   - Withdraw less than the balance → should succeed.
+   - Withdraw more than the balance → should be rejected ("Insufficient balance").
+4. **Check balance** — option `5`, confirm it matches your deposits/withdrawals.
+5. **View account details** — option `6`, confirm all fields are correct.
+6. **Update account** — option `2`, update name, address, or account type, and confirm the change shows up in option `6`.
+7. **Manager folder** — option `7`:
+   - Wrong password → access denied.
+   - Correct password (`abc123`) → try all three manager sub-options.
+8. **Invalid input handling** — try an invalid account number or a non-numeric menu choice, confirm it doesn't crash.
+9. **Exit** — option `8`, confirm the program exits cleanly.
 
-Since it's all in-memory, every test run starts fresh — nothing persists after you close the program.
+Since everything's in-memory, every test run starts fresh — nothing persists after you close the program.
 
 ## Screenshots
 
@@ -59,10 +70,3 @@ I haven't added any yet, but if you want to include some: drop them in a `screen
 ```markdown
 ![Main Menu](screenshots/main-menu.png)
 ```
-
-## What's next / possible improvements
-
-Some things I might add later if I keep working on this:
-- Saving data to a file or a real database so it survives between runs
-- Better input validation throughout
-- Maybe a basic GUI instead of the CLI menu
