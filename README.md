@@ -64,4 +64,8 @@ I didn't write automated tests for this one (yet)   testing was manual, just pok
 Since everything's in-memory, every test run starts fresh nothing persists after you close the program.
 
 ## Screenshots
+###Account Create
+<img width="647" height="472" alt="account_create" src="https://github.com/user-attachments/assets/f34be2d3-eefc-49c6-a3ed-4963b2df899f" />
+
+
 
