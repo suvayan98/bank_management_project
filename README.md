@@ -2,9 +2,9 @@
 
 ## Overview
 
-I built this as a beginner project while learning Python — a simple command-line app that mimics how a bank might handle basic customer accounts. Nothing fancy, no database, everything lives in memory while the program runs. The goal was to practice loops, lists, conditionals, and basic input handling in a project that actually felt like "something," instead of just another toy script.
+I built this as a beginner project while learning Python   a simple command-line app that mimics how a bank might handle basic customer accounts. Nothing fancy, no database, everything lives in memory while the program runs. The goal was to practice loops, lists, conditionals, and basic input handling in a project that actually felt like "something," instead of just another toy script.
 
-You run it, and it drops you into a menu that keeps looping until you choose to exit, letting you open accounts, update them, move money around, and check details — plus a manager-only view for oversight.
+You run it, and it drops you into a menu that keeps looping until you choose to exit, letting you open accounts, update them, move money around, and check details   plus a manager-only view for oversight.
 
 ## Features
 
@@ -22,7 +22,7 @@ You run it, and it drops you into a menu that keeps looping until you choose to 
 
 ## Technologies / Tools Used
 
-- **Python 3** — that's genuinely it. No pip installs, no frameworks. Just the standard library.
+- **Python 3**   that's genuinely it. No pip installs, no frameworks. Just the standard library.
 
 ## Steps to Install & Run the Project
 
@@ -41,11 +41,11 @@ You run it, and it drops you into a menu that keeps looping until you choose to 
    python bank_management.py
    ```
 
-No extra setup needed — if Python's installed, it just runs.
+No extra setup needed   if Python's installed, it just runs.
 
 ## Instructions for Testing
 
-I didn't write automated tests for this one (yet) — testing was manual, just poking at it through the menu:
+I didn't write automated tests for this one (yet)   testing was manual, just poking at it through the menu:
 
 1. **Create an account** — option `1`, fill in the details, note the account number shown.
 2. **Deposit money** — option `3`, enter the account number and an amount, confirm the balance updates.
@@ -61,7 +61,7 @@ I didn't write automated tests for this one (yet) — testing was manual, just p
 8. **Invalid input handling** — try an invalid account number or a non-numeric menu choice, confirm it doesn't crash.
 9. **Exit** — option `8`, confirm the program exits cleanly.
 
-Since everything's in-memory, every test run starts fresh — nothing persists after you close the program.
+Since everything's in-memory, every test run starts fresh nothing persists after you close the program.
 
 ## Screenshots
 

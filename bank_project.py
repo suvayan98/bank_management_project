@@ -128,5 +128,5 @@ while True:
             print("*Wrong Password*\nYou can not access Manager folder.")
 
     elif x >= 8:
-        print("Number is not there")
+        print("Thanks for using My Bank")
         break
