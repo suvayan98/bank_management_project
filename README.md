@@ -65,8 +65,3 @@ Since everything's in-memory, every test run starts fresh nothing persists after
 
 ## Screenshots
 
-I haven't added any yet, but if you want to include some: drop them in a `screenshots/` folder next to the script (main menu, account creation, a deposit/withdrawal, the manager panel are good ones to grab), and reference them here like:
-
-```markdown
-![Main Menu](screenshots/main-menu.png)
-```
