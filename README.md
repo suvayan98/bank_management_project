@@ -64,4 +64,42 @@ I didn't write automated tests for this one (yet)   testing was manual, just pok
 Since everything's in-memory, every test run starts fresh nothing persists after you close the program.
 
 ## Screenshots
+**Account Create**
+
+<img width="647" height="472" alt="account_create" src="https://github.com/user-attachments/assets/f34be2d3-eefc-49c6-a3ed-4963b2df899f" />
+
+**Account Updation**
+
+<img width="496" height="452" alt="account_updation" src="https://github.com/user-attachments/assets/f4e4fa5f-b699-4977-bf8b-c0f8e595f9f9" />
+
+**Diposit to Account**
+
+<img width="355" height="360" alt="diposit" src="https://github.com/user-attachments/assets/cc25040f-b0eb-4427-b530-08ef9afa929a" />
+
+**Withdraw from Account**
+
+<img width="350" height="342" alt="withdraw" src="https://github.com/user-attachments/assets/a9189215-daff-42bd-8601-deff7fe253e3" />
+
+**Check Balance**
+
+<img width="321" height="310" alt="check_balance" src="https://github.com/user-attachments/assets/3bff9bce-0f03-4bf8-885e-f74483b5d00f" />
+
+**Account Details**
+
+<img width="1123" height="313" alt="Account_details" src="https://github.com/user-attachments/assets/5327ba89-c060-4b08-b84c-5277481822a7" />
+
+**Total Account in the Bank from Manager Account**
+
+<img width="1612" height="391" alt="manager_total_account" src="https://github.com/user-attachments/assets/1d770d00-338e-4000-b5fa-52170d19e155" />
+
+**How much transaction from the account**
+
+<img width="911" height="383" alt="manager_transaction" src="https://github.com/user-attachments/assets/2972dd90-852d-49af-854f-a66cbccbcb3b" />
+
+
+
+
+
+
+
 
