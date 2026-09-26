@@ -1,4 +1,4 @@
-# 5.2 Statement
+# Statement
 
 ## Problem Statement
 
