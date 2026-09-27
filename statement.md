@@ -2,9 +2,9 @@
 
 ## Problem Statement
 
-Banks have to keep track of a lot of customer information   account details, balances, deposits, withdrawals   and doing any of this by hand or on paper is slow and error-prone. As a beginner project, I wanted to understand how a system like this works at its core, without jumping straight into databases or a real backend. So I built a simplified, command-line version of a bank management system that handles the basic day-to-day operations a bank teller or customer might need: opening an account, updating details, depositing/withdrawing money, and checking balances   plus a manager-only view for oversight.
+Banks handle a huge amount of customer information — account details, balances, deposits, withdrawals — and doing any of that by hand or on paper is slow and prone to mistakes. As a beginner project, I wanted to understand how a system like this actually works under the hood, without jumping straight into databases or a real backend. So I built a simplified, command-line version of a bank management system that covers the basic day-to-day operations a teller or customer might need: opening an account, updating details, depositing and withdrawing money, and checking balances — plus a manager-only view for oversight.
 
-The core problem I'm solving here (at a small scale) is: how do you let multiple customers open accounts and manage their money safely, while giving a "manager" restricted access to oversee accounts, all through a simple, menu-driven interface?
+The core problem I'm solving here (at a small scale) is: how do you let multiple customers open accounts and manage their money safely, while also giving a "manager" restricted access to oversee those accounts — all through a simple, menu-driven interface?
 
 ## Scope of the Project
 
