@@ -1,12 +1,14 @@
 from function import ramdom_no
+from main_menu import menu1
+from exit_menu import exit1
+
 
 n = 1
 l = []
 print("\nWelcome to the Bank Management System. Namaste \U0001F64F \U0001F64F !!")
 
 while True:
-    print("\n1.Account Opening.\n2.Account Updation.\n3.Diposit in Account.\n4.Withdraw from Account. "
-          "\n5.Account Balance. \n6.Account Details. \n7.Manager folder. \n8.Exit")
+    menu1()
     try:
         x = int(input("enter the no. what you want:"))
     except ValueError:
@@ -128,5 +130,5 @@ while True:
             print("*Wrong Password*\nYou can not access Manager folder.")
 
     elif x >= 8:
-        print("Thanks for using My Bank")
+        exit1()
         break
