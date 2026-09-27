@@ -17,11 +17,6 @@ This project is intentionally kept small and focused, since the goal was learnin
 - Viewing an account's balance and full details
 - A password-protected manager section to view all accounts and filter customers by balance range
 
-Out of scope (at least for now):
-- No persistent storage   all data is stored in memory and is lost when the program closes
-- No real security/encryption (the manager password is a plain hardcoded string)
-- No GUI   everything is menu-driven text in the terminal
-- No multi-user/concurrent access   it's a single-session, single-user program
 
 ## Target Users
 
