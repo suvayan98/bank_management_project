@@ -2,14 +2,14 @@
 
 ## Overview
 
-I built this as a beginner project while learning Python   a simple command-line app that mimics how a bank might handle basic customer accounts. Nothing fancy, no database, everything lives in memory while the program runs. The goal was to practice loops, lists, conditionals, and basic input handling in a project that actually felt like "something," instead of just another toy script.
+I made this while learning Python — it's a simple Bank Management System program. It runs entirely in memory while the program is active, since there's no database involved. I used this project as a way to get hands-on practice with core Python concepts like loops, conditionals, and basic input handling.
 
-You run it, and it drops you into a menu that keeps looping until you choose to exit, letting you open accounts, update them, move money around, and check details   plus a manager-only view for oversight.
+Run it, and you're dropped straight into a menu that keeps looping until you choose to exit. From there you can open accounts, update them, move money around, and check account details — plus there's a manager-only view for extra oversight.
 
 ## Features
 
-- **Account Opening** – Register a new customer with name, customer ID, branch, address, IFSC code, and account type.
-- **Account Updation** – Edit an existing account's name, address, or account type.
+- **Account Opening** – Create a new customer with name, customer ID, branch, address, IFSC code, and account type.
+- **Account Updation** – Edit an created account's name, address, or account type.
 - **Deposit** – Add money to an account's balance.
 - **Withdraw** – Take money out, with a check that stops you from withdrawing more than the balance.
 - **Account Balance** – Quickly view just the balance for an account.
@@ -47,21 +47,21 @@ No extra setup needed   if Python's installed, it just runs.
 
 I didn't write automated tests for this one (yet)   testing was manual, just poking at it through the menu:
 
-1. **Create an account** — option `1`, fill in the details, note the account number shown.
-2. **Deposit money** — option `3`, enter the account number and an amount, confirm the balance updates.
+1. **Create an account** — option `1`, fill in the details and note the account number it gives you.
+2. **Deposit money** — option `3`, enter the account number and an amount, then confirm the balance updates correctly.
 3. **Withdraw money** — option `4`:
-   - Withdraw less than the balance → should succeed.
-   - Withdraw more than the balance → should be rejected ("Insufficient balance").
-4. **Check balance** — option `5`, confirm it matches your deposits/withdrawals.
+   - Withdrawing less than the balance should succeed.
+   - Withdrawing more than the balance should get rejected with an "Insufficient balance" message
+4. **Check balance** — option `5`, confirm it matches whatever deposits/withdrawals you've made.
 5. **View account details** — option `6`, confirm all fields are correct.
-6. **Update account** — option `2`, update name, address, or account type, and confirm the change shows up in option `6`.
+6. **Update account** — option `2`, change the name, address, or account type, then check it's reflected when you view details again (Option `6`).
 7. **Manager folder** — option `7`:
-   - Wrong password → access denied.
+   - Wrong password should deny access.
    - Correct password (`abc123`) → try all three manager sub-options.
-8. **Invalid input handling** — try an invalid account number or a non-numeric menu choice, confirm it doesn't crash.
-9. **Exit** — option `8`, confirm the program exits cleanly.
+8. **Invalid input handling** — Try an invalid account number or a non-numeric menu choice, and confirm the program doesn't crash.
+9. **Exit** — option `8`,confirm it exits.
 
-Since everything's in-memory, every test run starts fresh nothing persists after you close the program.
+Since everything's in-memory, every test run starts completely fresh — nothing persists once you close the program.
 
 ## Screenshots
 **Account Create**
